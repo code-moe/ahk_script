@@ -123,12 +123,18 @@ return			; exit key
 
 ;____________ that's it for windows + numpad keys ________________
 
-NumpadAdd::
+NumpadAdd::			; press Numpad+
 {
-CoordMode, Mouse, Screen
-Click, 1070, 690
+CoordMode, Mouse, Screen	; set coordinate mode to screen
+Click, 1070, 690		; left click this coordinate
+return				; exit key
 }
-
+NumpadSub::			; press Numpad-
+{
+CoordMode, Mouse, Screen	; set coordinate mode to screen
+Click, 1200, 690		; left click this coordinate
+return				; exit key
+}
 
 
 return
