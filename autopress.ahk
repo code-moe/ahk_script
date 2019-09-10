@@ -11,7 +11,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;https://autohotkey.com/board/topic/69806-help-with-a-script-to-auto-press-keys/
 ;https://stackoverflow.com/questions/45716861/how-do-i-send-a-key-multiple-times-in-autohotkey
 
-#1:: 			; press windows + key 1
+#Numpad1:: 		; press windows + Numpad 1
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
@@ -26,8 +26,8 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#2::
-{			; press windows + key 2
+#Numpad2::
+{			; press windows + Numpad 2
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
 Loop,10 {		; loop tab x 10
@@ -41,7 +41,7 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#3::			; press windows + key 3
+#Numpad3::		; press windows + Numpad 3
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
@@ -56,7 +56,7 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#4::			; press windows + key 4
+#Numpad4::		; press windows + Numpad 4
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
@@ -71,7 +71,7 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#5::			; press windows + key 5
+#Numpad5::		; press windows + Numpad 5
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
@@ -86,7 +86,7 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#6::			; press windows + key 6
+#Numpad6::		; press windows + Numpad 6
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
@@ -101,7 +101,7 @@ Loop,3 {		; loop tab x 3
 return			; exit key
 }
 
-#7::			; press windows + key 7
+#Numpad7::		; press windows + Numpad 7
 {
 Send, cas		; cas from Cash
 Send, {Enter}		; input cash
