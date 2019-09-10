@@ -36,8 +36,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-002		; P-002 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
@@ -49,8 +47,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-003		; P-003 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
@@ -62,8 +58,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-004		; P-004 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
@@ -75,8 +69,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-005		; P-005 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
@@ -88,8 +80,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-006		; P-006 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
@@ -101,8 +91,6 @@ Send, {Tab 10}		; press tab x 10
 Send,P-007		; P-007 is code item
 Send, {Enter}		; input code item
 Send, {Tab 3}		; press tab x 3
-
-}
 return			; exit key
 }
 
