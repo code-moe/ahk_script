@@ -10,6 +10,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;references : 
 ;https://autohotkey.com/board/topic/69806-help-with-a-script-to-auto-press-keys/
 ;https://stackoverflow.com/questions/45716861/how-do-i-send-a-key-multiple-times-in-autohotkey
+;https://www.autohotkey.com/docs/KeyList.htm
+
+
+;Here I automate Numpad 1 - Numpad 7 to enter smh :
 
 #Numpad1:: 		; press windows + Numpad 1
 {
@@ -108,7 +112,7 @@ Send, {Enter}		; input cash
 Loop,10 {		; loop tab x 10
 	Send, {Tab}
 }
-Send,P-006		; P-006 is code item
+Send,P-007		; P-007 is code item
 Send, {Enter}		; input code item
 Loop,3 {		; loop tab x 3
 	Send, {Tab}
