@@ -11,6 +11,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;https://autohotkey.com/board/topic/69806-help-with-a-script-to-auto-press-keys/
 ;https://stackoverflow.com/questions/45716861/how-do-i-send-a-key-multiple-times-in-autohotkey
 ;https://www.autohotkey.com/docs/KeyList.htm
+;https://www.autohotkey.com/boards/viewtopic.php?t=57694
 
 
 ;Here I automate Numpad 1 - Numpad 7 to enter smh :
@@ -119,5 +120,15 @@ Loop,3 {		; loop tab x 3
 }
 return			; exit key
 }
+
+;____________ that's it for windows + numpad keys ________________
+
+NumpadAdd::
+{
+CoordMode, Mouse, Screen
+Click, 1070, 690
+}
+
+
 
 return
