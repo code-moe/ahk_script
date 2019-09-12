@@ -19,20 +19,19 @@ Gui, Add, Edit, vPlate				; Add textbox plate
 Gui, Add, Button, x10 y145 Default gSelfPC, Self PC	; Add Button in x,y position, set default
 Gui, Add, Button, x80 y145 gDelivery, Delivery		; Add Button in line with above position			
 Gui, Show					; Show GUI
-return						; exit key
-
-SelfPC:						; What happen if you button OK clicked
-Gui, Submit					; Submit Button
-SendCode(%Name%,%Qty%,%Plate%)			; Sendcode Func
-return						; exit key
-
-Delivery:
-Gui, Submit					; Submit Button
-SendCode(%Name%,%Qty%,%Plate%)			; Sendcode Func
-return	
-				
+return						; exit key			
 }
 
+SelfPC:						; What happen if you button SelfPC clicked
+Gui, Submit					; Submit Button
+SendCode(%Name%,%Qty%,%Plate%)			; Sendcode Func
+return						; exit key
+
+Delivery:					; What happen if you button Delivery clicked
+Gui, Submit					; Submit Button
+SendCode(%Name%,%Qty%,%Plate%)			; Sendcode Func
+return						; exit key
+	
 
 SendCode(cname,cqty,cplate) {				; Sendcode 
     Send %cname%{Enter}{Tab 7}P-%cqty%{Enter 3}%cplate%
