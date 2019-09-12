@@ -7,6 +7,11 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+;references : https://www.autohotkey.com/docs/commands/Gui.htm
+;https://autohotkey.com/board/topic/59034-buttons-side-by-side/
+;https://autohotkey.com/board/topic/65262-remove-minimizemaximize-buttons-from-gui/
+;https://autohotkey.com/board/topic/121608-create-gui-ask-for-input-store-variable/
+
 #Numpad8::
 {
 Gui, New,-MaximizeBox -MinimizeBox +AlwaysOnTop,Autofill	; Add Gui, Erase MaxMinClose opt, TitleText 
