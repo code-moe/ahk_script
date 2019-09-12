@@ -31,21 +31,23 @@ return						; exit key
 
 SelfPC:						; What happen if you button SelfPC clicked
 Gui, Submit					; Submit Button
-If (!Qty)					; Check if Qty is blank or zero
-Qty =4						; if it is, change the value to 4
-Send %Name%{Enter}{Tab 7}P-00%Qty%{Enter 3}%Plate%	; SendInput from keyboard
+Check(Name,Qty,Plate)				; Func valid_check
 return						; exit key
 
 Delivery:					; What happen if you button Delivery clicked
 Gui, Submit					; Submit Button
-If (!Qty)					; Check if Qty is blank or zero
-Qty =4						; if it is, change the value to 4
 If (!Plate)					; if statement 
 Plate =9460A SYARIL				; change variable value
 Else 						; else statement
-Plate =9874S MURI				; change variable value		
-Send %Name%{Enter}{Tab 7}P-00%Qty%{Enter 3}%Plate%	; SendInput from keyboard
+Plate =9874S MURI				; change variable value	
+Check(Name,Qty,Plate)				; Func valid_check
 return						; exit key
+
+Check(name,qty,plate) {				; Func valid_check
+ If (!Qty)					; Check if Qty is blank or zero
+ Qty =4						; if it is, change the value to 4	
+ Send %Name%{Enter}{Tab 7}P-00%Qty%{Enter 3}%Plate%	; SendInput from keyboard
+}
 				
 }
 
