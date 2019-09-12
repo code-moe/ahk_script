@@ -11,6 +11,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;https://autohotkey.com/board/topic/59034-buttons-side-by-side/
 ;https://autohotkey.com/board/topic/65262-remove-minimizemaximize-buttons-from-gui/
 ;https://autohotkey.com/board/topic/121608-create-gui-ask-for-input-store-variable/
+;https://www.autohotkey.com/boards/viewtopic.php?t=5080 ;detect var empty/blank
+;https://www.autohotkey.com/docs/commands/IfExpression.htm
+;https://www.autohotkey.com/docs/commands/Else.htm
 
 #Numpad8::
 {
@@ -35,17 +38,14 @@ return						; exit key
 
 Delivery:					; What happen if you button Delivery clicked
 Gui, Submit					; Submit Button
-
 If (!Qty)					; Check if Qty is blank or zero
 Qty =4						; if it is, change the value to 4
-Plat = %Plate%					; declare variable
-If (Plat = 1)					; if statement 
-Plat =9874S MURI				; change variable value
+If (!Plate)					; if statement 
+Plate =9460A SYARIL				; change variable value
 Else 						; else statement
-Plat =9460A SYARIL				; change variable value		
-Send %Name%{Enter}{Tab 7}P-00%Qty%{Enter 3}%Plat%	; SendInput from keyboard
+Plate =9874S MURI				; change variable value		
+Send %Name%{Enter}{Tab 7}P-00%Qty%{Enter 3}%Plate%	; SendInput from keyboard
 return						; exit key
-
 				
 }
 
