@@ -51,7 +51,4 @@ Check(name,qty,plate) {				; Func valid_check
 				
 }
 
-
-
-
-
+#Numpad9::Send {Tab 5}{Down 6}
