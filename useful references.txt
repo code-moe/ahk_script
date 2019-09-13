@@ -1,0 +1,6 @@
+https://www.autohotkey.com/boards/viewtopic.php?f=5&t=10064 -TabStop
+https://stackoverflow.com/questions/18491754/sending-laptop-function-key-autohotkey?lq=1 
+https://autohotkey.com/board/topic/9327-a-handy-dialogue-technique-and-colorful-msgboxs/
+https://autohotkey.com/board/topic/86405-resize-text-field-inside-gui/
+https://www.autohotkey.com/boards/viewtopic.php?t=26471
+https://autohotkey.com/board/topic/71838-solved-run-a-script-for-a-program-in-the-background/
