@@ -31,6 +31,7 @@ return						; exit key
 
 SelfPC:						; What happen if you button SelfPC clicked
 Gui, Submit					; Submit Button
+StringUpper, Plate, Plate			; Default all plate become uppercase
 Check(Name,Qty,Plate)				; Func valid_check
 return						; exit key
 
